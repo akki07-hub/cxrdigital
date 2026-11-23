@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CXR Digital | Websites That Bring You Customers</title>
+    <meta name="description" content="CXR Digital builds fast, modern websites with online booking, AI chat assistants and lead capture for clinics, salons, trades, gyms and real estate. Free demo in 48 hours.">
+    <meta property="og:title" content="CXR Digital | Build Smart. Grow Digital.">
+    <meta property="og:description" content="Modern business websites with booking, AI chat and lead capture. See our live demos and get a free demo for your business.">
+    <meta property="og:image" content="img/realty.webp">
+    <meta name="theme-color" content="#05070b">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305070b'/%3E%3Cpath d='M7 9l18 14M25 9L7 23' stroke='%231f7bff' stroke-width='4.5' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+    <canvas id="pixels" aria-hidden="true"></canvas>
+
+    <header class="header" id="header">
+        <div class="wrap header-inner">
+            <a href="#top" class="logo" aria-label="CXR Digital home">
+                <span class="logo-pixels" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="logo-cxr">C<span>X</span>R</span>
+                <span class="logo-digital">DIGITAL</span>
+            </a>
+            <nav class="nav" id="nav" aria-label="Main">
+                <a href="#work">Work</a>
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#process">Process</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="#contact" class="btn btn-blue btn-sm hide-sm">Get a free demo</a>
+            <button type="button" class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+        </div>
+    </header>
+
+    <main id="top">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <p class="pill"><span class="dot"></span> Taking on new client projects</p>
+                    <h1>Websites that turn visitors into <span class="grad">customers.</span></h1>
+                    <p class="lead">We design and build fast, modern websites for clinics, salons, trades, gyms and real estate, with online booking, AI chat assistants and lead capture built in.</p>
+                    <div class="hero-ctas">
+                        <a href="#contact" class="btn btn-blue btn-lg">Get a free demo <i class="fas fa-arrow-right"></i></a>
+                        <a href="#work" class="btn btn-ghost btn-lg"><i class="fas fa-play"></i> See live demos</a>
+                    </div>
+                    <ul class="hero-points">
+                        <li><i class="fas fa-bolt"></i> Free demo in 48 hours</li>
+                        <li><i class="fas fa-rocket"></i> Live in 7 days</li>
+                        <li><i class="fas fa-mobile-screen"></i> Mobile-first</li>
+                    </ul>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="frame f1"><div class="bar"><i></i><i></i><i></i><span>northline-realty</span></div><img src="img/realty.webp" alt="" width="1200" height="750"></div>
+                    <div class="frame f2"><div class="bar"><i></i><i></i><i></i><span>lumen-dental</span></div><img src="img/dental.webp" alt="" width="1200" height="750"></div>
+                    <div class="frame f3"><div class="bar"><i></i><i></i><i></i><span>sage-and-stone</span></div><img src="img/salon.webp" alt="" width="1200" height="750"></div>
+                    <div class="float-chip c1"><i class="fas fa-calendar-check"></i><span><strong>New booking</strong><small>Cut &amp; balayage &middot; Sat 10:30</small></span></div>
+                    <div class="float-chip c2"><i class="fas fa-robot"></i><span><strong>AI assistant</strong><small>"Yes, we take Delta Dental!"</small></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee -->
+        <div class="ticker" aria-hidden="true">
+            <div class="ticker-track">
+                <span>Online Booking</span><b>&#9632;</b><span>AI Chat Assistants</span><b>&#9632;</b><span>Lead Capture</span><b>&#9632;</b><span>Price Calculators</span><b>&#9632;</b><span>Mobile-First Design</span><b>&#9632;</b><span>Google-Ready SEO</span><b>&#9632;</b>
+                <span>Online Booking</span><b>&#9632;</b><span>AI Chat Assistants</span><b>&#9632;</b><span>Lead Capture</span><b>&#9632;</b><span>Price Calculators</span><b>&#9632;</b><span>Mobile-First Design</span><b>&#9632;</b><span>Google-Ready SEO</span><b>&#9632;</b>
+            </div>
+        </div>
+
+        <!-- Work -->
+        <section class="section" id="work">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="kicker">Live demos</p>
+                    <h2>Don't take our word for it. <span class="grad">Click around.</span></h2>
+                    <p>Every demo below is a real, working website you can use right now: book appointments, chat with the assistant, run the calculators.</p>
+                </div>
+                <div class="filters" role="group" aria-label="Filter demos">
+                    <button type="button" class="filter active" data-filter="all">All</button>
+                    <button type="button" class="filter" data-filter="health">Health &amp; Beauty</button>
+                    <button type="button" class="filter" data-filter="local">Local Services</button>
+                    <button type="button" class="filter" data-filter="property">Real Estate</button>
+                </div>
+                <div class="work-grid" id="work-grid">
+                    <article class="work work-lg" data-cat="property">
+                        <a class="work-shot" href="https://akki07-hub.github.io/northlinereality/" target="_blank" rel="noopener">
+                            <img src="img/realty.webp" alt="Northline Realty real estate website demo" loading="lazy" width="1200" height="750">
+                            <span class="visit">View live <i class="fas fa-arrow-up-right-from-square"></i></span>
+                        </a>
+                        <div class="work-info">
+                            <div><span class="tag">Real Estate &middot; USA</span><h3>Northline Realty</h3></div>
+                            <ul class="feats"><li>Property search</li><li>Mortgage calculator</li><li>Home valuation</li><li>Tour booking</li></ul>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="health">
+                        <a class="work-shot" href="https://akki07-hub.github.io/LUMENDENTAL/" target="_blank" rel="noopener">
+                            <img src="img/dental.webp" alt="Lumen Dental Studio website demo" loading="lazy" width="1200" height="750">
+                            <span class="visit">View live <i class="fas fa-arrow-up-right-from-square"></i></span>
+                        </a>
+                        <div class="work-info">
+                            <div><span class="tag">Dental Clinic &middot; USA</span><h3>Lumen Dental</h3></div>
+                            <ul class="feats"><li>Booking wizard</li><li>Insurance checker</li><li>AI front desk</li></ul>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="health">
+                        <a class="work-shot" href="https://akki07-hub.github.io/sagestone/" target="_blank" rel="noopener">
+                            <img src="img/salon.webp" alt="Sage and Stone salon and spa website demo" loading="lazy" width="1200" height="750">
+                            <span class="visit">View live <i class="fas fa-arrow-up-right-from-square"></i></span>
+                        </a>
+                        <div class="work-info">
+                            <div><span class="tag">Salon &amp; Spa &middot; UK</span><h3>Sage &amp; Stone</h3></div>
+                            <ul class="feats"><li>Booking basket</li><li>Treatment quiz</li><li>Gift cards</li></ul>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="local">
+                        <a class="work-shot" href="https://akki07-hub.github.io/riverbend/" target="_blank" rel="noopener">
+                            <img src="img/plumbing.webp" alt="Riverbend Plumbing website demo" loading="lazy" width="1200" height="750">
+                            <span class="visit">View live <i class="fas fa-arrow-up-right-from-square"></i></span>
+                        </a>
+                        <div class="work-info">
+                            <div><span class="tag">Home Services &middot; USA</span><h3>Riverbend Plumbing</h3></div>
+                            <ul class="feats"><li>Instant estimator</li><li>ZIP checker</li><li>Emergency chat</li></ul>
+                        </div>
+                    </article>
+                    <article class="work" data-cat="health local">
+                        <a class="work-shot" href="https://akki07-hub.github.io/FUTURE_FS_03/" target="_blank" rel="noopener">
+                            <img src="img/gym.webp" alt="CXR Fitness gym website demo" loading="lazy" width="1200" height="750">
+                            <span class="visit">View live <i class="fas fa-arrow-up-right-from-square"></i></span>
+                        </a>
+                        <div class="work-info">
+                            <div><span class="tag">Gym &amp; Fitness &middot; USA</span><h3>CXR Fitness Club</h3></div>
+                            <ul class="feats"><li>Free trial booking</li><li>BMI tool</li><li>Chat assistant</li></ul>
+                        </div>
+                    </article>
+                </div>
+                <p class="note">Demo businesses are fictional. Built to show what we can build for you.</p>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="section section-alt" id="services">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="kicker">What we build</p>
+                    <h2>Everything your website needs to <span class="grad">win customers</span></h2>
+                </div>
+                <div class="services">
+                    <article class="svc"><span class="svc-icon"><i class="fas fa-laptop-code"></i></span><h3>Business Websites</h3><p>Custom-designed, lightning-fast sites that look premium on every phone, tablet and desktop.</p></article>
+                    <article class="svc"><span class="svc-icon"><i class="fas fa-calendar-check"></i></span><h3>Online Booking</h3><p>Let customers book appointments, tours or quotes 24/7, without the back-and-forth phone calls.</p></article>
+                    <article class="svc"><span class="svc-icon"><i class="fas fa-robot"></i></span><h3>AI Chat Assistants</h3><p>A virtual front desk that answers prices, hours and FAQs instantly, and turns questions into bookings.</p></article>
+                    <article class="svc"><span class="svc-icon"><i class="fas fa-calculator"></i></span><h3>Smart Tools</h3><p>Price estimators, insurance checkers, mortgage calculators and quizzes that keep visitors engaged.</p></article>
+                    <article class="svc"><span class="svc-icon"><i class="fas fa-magnet"></i></span><h3>Lead Capture</h3><p>Forms and offers that land straight in your inbox, so every enquiry gets followed up.</p></article>
+                    <article class="svc"><span class="svc-icon"><i class="fas fa-magnifying-glass-chart"></i></span><h3>SEO &amp; Google Setup</h3><p>Clean code, fast load times and Google Business Profile optimization so local customers find you.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="section" id="pricing">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="kicker">Pricing</p>
+                    <h2>Simple, <span class="grad">one-time</span> pricing</h2>
+                    <p>No hidden fees. Pay 50% to start and 50% at launch. You own your website, 100%.</p>
+                </div>
+                <div class="currency" role="radiogroup" aria-label="Currency">
+                    <button type="button" class="cur active" data-cur="USD" role="radio" aria-checked="true">$ USD</button>
+                    <button type="button" class="cur" data-cur="GBP" role="radio" aria-checked="false">&pound; GBP</button>
+                    <button type="button" class="cur" data-cur="INR" role="radio" aria-checked="false">&#8377; INR</button>
+                </div>
+                <div class="plans">
+                    <article class="plan">
+                        <h3>Starter</h3>
+                        <p class="plan-for">For new businesses that need a professional presence fast</p>
+                        <p class="price"><span class="amt" data-usd="349" data-gbp="279" data-inr="14,999">$349</span><small>one-time</small></p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 1-page website (up to 6 sections)</li>
+                            <li><i class="fas fa-check"></i> Mobile-first, custom design</li>
+                            <li><i class="fas fa-check"></i> Contact form &amp; WhatsApp button</li>
+                            <li><i class="fas fa-check"></i> Google Maps &amp; basic SEO</li>
+                            <li><i class="fas fa-check"></i> Delivered in 5 days</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-ghost btn-block" data-plan="Starter">Choose Starter</a>
+                    </article>
+                    <article class="plan plan-pop">
+                        <span class="pop-flag">Most popular</span>
+                        <h3>Growth</h3>
+                        <p class="plan-for">Everything you need to get bookings and leads online</p>
+                        <p class="price"><span class="amt" data-usd="749" data-gbp="599" data-inr="29,999">$749</span><small>one-time</small></p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to 5 pages or a long-scroll site</li>
+                            <li><i class="fas fa-check"></i> <strong>Online booking system</strong></li>
+                            <li><i class="fas fa-check"></i> <strong>AI chat assistant</strong></li>
+                            <li><i class="fas fa-check"></i> 1 smart tool (estimator, quiz...)</li>
+                            <li><i class="fas fa-check"></i> Google Business Profile setup</li>
+                            <li><i class="fas fa-check"></i> Delivered in 7 days</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-blue btn-block" data-plan="Growth">Choose Growth</a>
+                    </article>
+                    <article class="plan">
+                        <h3>Pro</h3>
+                        <p class="plan-for">For established businesses ready to scale</p>
+                        <p class="price"><span class="amt" data-usd="1,299" data-gbp="1,049" data-inr="54,999">$1,299</span><small>from</small></p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Growth</li>
+                            <li><i class="fas fa-check"></i> Unlimited pages</li>
+                            <li><i class="fas fa-check"></i> Multiple smart tools &amp; integrations</li>
+                            <li><i class="fas fa-check"></i> Email &amp; SMS lead alerts</li>
+                            <li><i class="fas fa-check"></i> Copywriting included</li>
+                            <li><i class="fas fa-check"></i> Priority 10-day delivery</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-ghost btn-block" data-plan="Pro">Choose Pro</a>
+                    </article>
+                </div>
+                <div class="care">
+                    <div><i class="fas fa-shield-heart"></i><span><strong>Care plan</strong> &middot; Hosting, updates, backups, monthly edits and priority support</span></div>
+                    <strong class="care-price"><span class="amt" data-usd="49" data-gbp="39" data-inr="1,999">$49</span>/month <small>optional</small></strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="section section-alt" id="process">
+            <div class="wrap">
+                <div class="sec-head">
+                    <p class="kicker">How it works</p>
+                    <h2>From idea to live website in <span class="grad">7 days</span></h2>
+                </div>
+                <ol class="steps">
+                    <li><span class="step-n">01</span><h3>Free demo</h3><p>Tell us about your business. Within 48 hours we build a demo of your new homepage, completely free.</p></li>
+                    <li><span class="step-n">02</span><h3>Your feedback</h3><p>Love it? We refine the design, content and features together on a quick call.</p></li>
+                    <li><span class="step-n">03</span><h3>Build &amp; launch</h3><p>We build the full site, connect your domain and booking, then test on every device.</p></li>
+                    <li><span class="step-n">04</span><h3>Grow</h3><p>We set up Google, track your leads, and keep everything fast and updated.</p></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Why us -->
+        <section class="section" id="why">
+            <div class="wrap why">
+                <div>
+                    <p class="kicker">Why CXR Digital</p>
+                    <h2>Built smart. <span class="grad">Priced fairly.</span></h2>
+                    <p class="why-lead">We're a young, hungry studio, which means you get agency-quality work, direct contact with the people building your site, and prices that make sense for small businesses.</p>
+                    <a href="#contact" class="btn btn-blue">Start with a free demo <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <ul class="why-list">
+                    <li><i class="fas fa-eye"></i><div><strong>See it before you pay</strong><span>Free homepage demo first. If you don't love it, you walk away and pay nothing.</span></div></li>
+                    <li><i class="fas fa-gauge-high"></i><div><strong>Fast by default</strong><span>No bloated page builders. Hand-coded sites that load in about a second.</span></div></li>
+                    <li><i class="fas fa-key"></i><div><strong>You own everything</strong><span>Your code, your domain, your content. No lock-in, ever.</span></div></li>
+                    <li><i class="fas fa-earth-americas"></i><div><strong>Work across time zones</strong><span>We work with clients in the USA, UK and India, with updates that land in your morning.</span></div></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section section-alt" id="faq">
+            <div class="wrap faq-wrap">
+                <div class="sec-head left">
+                    <p class="kicker">FAQ</p>
+                    <h2>Questions? <span class="grad">Answered.</span></h2>
+                    <p>Still unsure? Message us on <a href="https://www.instagram.com/cxrdigital/" target="_blank" rel="noopener" class="text-link">Instagram</a> and we'll reply the same day.</p>
+                </div>
+                <div class="faq">
+                    <details open><summary>Is the demo really free?</summary><p>Yes. We build a working demo of your homepage at no cost and with no obligation. If you'd like the full site, we continue. If not, no hard feelings.</p></details>
+                    <details><summary>How long does a website take?</summary><p>Starter sites take about 5 days and Growth sites about 7 days after we receive your content. Pro projects usually take 10 to 14 days.</p></details>
+                    <details><summary>Do I need to provide text and photos?</summary><p>It helps, but it isn't required. We can write your copy (included in Pro) and source professional, licensed stock photos until you have your own.</p></details>
+                    <details><summary>What about hosting and my domain?</summary><p>We help you buy a domain (around $10 to $15 a year) and host your site on fast, reliable infrastructure. The Care plan covers hosting, updates and edits.</p></details>
+                    <details><summary>How does the AI chat assistant work?</summary><p>It's trained on your services, prices and FAQs, so it answers customers instantly and points them to booking. You can review and update its answers at any time.</p></details>
+                    <details><summary>How do payments work for international clients?</summary><p>We invoice in USD, GBP or INR and accept international transfers via Wise or PayPal. You pay 50% to start and 50% when you're happy and ready to launch.</p></details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact-sec" id="contact">
+            <div class="wrap contact">
+                <div class="contact-copy">
+                    <p class="kicker">Free demo</p>
+                    <h2>Let's build your <span class="grad">new website.</span></h2>
+                    <p>Tell us a little about your business. We'll send you a free demo of your new homepage within 48 hours, with no cost and no obligation.</p>
+                    <ul class="contact-points">
+                        <li><i class="fas fa-check"></i> Reply within 24 hours</li>
+                        <li><i class="fas fa-check"></i> Free homepage demo in 48 hours</li>
+                        <li><i class="fas fa-check"></i> No payment until you're happy</li>
+                    </ul>
+                    <div class="socials">
+                        <a href="https://www.instagram.com/cxrdigital/" target="_blank" rel="noopener" aria-label="CXR Digital on Instagram"><i class="fab fa-instagram"></i> @cxrdigital</a>
+                        <a href="https://www.threads.net/@cxrdigital" target="_blank" rel="noopener" aria-label="CXR Digital on Threads"><i class="fab fa-threads"></i> Threads</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="row">
+                        <label>Your name<input id="c-name" autocomplete="name" required></label>
+                        <label>Business name<input id="c-biz" autocomplete="organization" required></label>
+                    </div>
+                    <div class="row">
+                        <label>Email<input id="c-email" type="email" autocomplete="email" required></label>
+                        <label>WhatsApp / phone <span class="opt">(optional)</span><input id="c-phone" type="tel" autocomplete="tel"></label>
+                    </div>
+                    <div class="row">
+                        <label>Industry
+                            <select id="c-industry">
+                                <option>Dental / medical clinic</option><option>Salon / spa / beauty</option><option>Plumbing / HVAC / trades</option>
+                                <option>Real estate</option><option>Gym / fitness</option><option>Restaurant / cafe</option><option>Other</option>
+                            </select>
+                        </label>
+                        <label>Interested in
+                            <select id="c-plan">
+                                <option>Not sure yet</option><option>Starter</option><option selected>Growth</option><option>Pro</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label>Current website <span class="opt">(if any)</span><input id="c-site" type="text" inputmode="url" placeholder="yourbusiness.com, or leave blank"></label>
+                    <label>What do you need? <span class="opt">(optional)</span><textarea id="c-msg" rows="3" placeholder="e.g. Online booking and a chatbot for my salon"></textarea></label>
+                    <div class="hp" aria-hidden="true"><label>Company<input id="c-company" name="company" tabindex="-1" autocomplete="off"></label></div>
+                    <button type="submit" class="btn btn-blue btn-block btn-lg" id="c-submit">Get my free demo <i class="fas fa-paper-plane"></i></button>
+                    <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer-inner">
+            <a href="#top" class="logo logo-sm" aria-label="CXR Digital home">
+                <span class="logo-pixels" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="logo-cxr">C<span>X</span>R</span>
+                <span class="logo-digital">DIGITAL</span>
+            </a>
+            <p class="tagline">Build Smart. Grow Digital.</p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/cxrdigital/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.threads.net/@cxrdigital" target="_blank" rel="noopener" aria-label="Threads"><i class="fab fa-threads"></i></a>
+            </div>
+        </div>
+        <p class="copy">&copy; <span id="year">2026</span> CXR Digital. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js?v=5"></script>
+</body>
+</html>
