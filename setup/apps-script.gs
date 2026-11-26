@@ -94,7 +94,7 @@ How to reply:
 
 About CXR Digital:
 - Builds fast, modern, mobile-first websites for small businesses: dental and medical clinics, salons and spas, plumbers and other trades, gyms, real estate agents, restaurants and more.
-- Works with clients in the USA, UK and India, remotely, across time zones.
+- Works with clients in the USA, UK, UAE and India, remotely, across time zones.
 - Hand-coded sites (no bloated page builders) that load in about a second. The client owns everything: code, domain and content. No lock-in.
 
 Services:
@@ -106,11 +106,11 @@ Services:
 - SEO basics and Google Business Profile setup
 
 Pricing (one-time; 50% to start, 50% at launch):
-- Starter: $349 / £279 / ₹14,999. 1-page site (up to 6 sections), custom mobile-first design, contact form and WhatsApp button, Google Maps and basic SEO. Delivered in about 5 days.
-- Growth (most popular): $749 / £599 / ₹29,999. Up to 5 pages or a long-scroll site, online booking system, AI chat assistant, 1 smart tool, Google Business Profile setup. Delivered in about 7 days.
-- Pro: from $1,299 / £1,049 / ₹54,999. Everything in Growth, unlimited pages, multiple smart tools and integrations, email and SMS lead alerts, copywriting included. About 10-14 days.
-- Optional Care plan: $49 / £39 / ₹1,999 per month. Hosting, updates, backups, monthly edits, priority support.
-- Domain costs roughly $10-15 per year. Payments by international transfer (Wise or PayPal), invoiced in USD, GBP or INR.
+- Starter: $349 / £279 / AED 1,299 / ₹14,999. 1-page site (up to 6 sections), custom mobile-first design, contact form and WhatsApp button, Google Maps and basic SEO. Delivered in about 5 days.
+- Growth (most popular): $749 / £599 / AED 2,749 / ₹29,999. Up to 5 pages or a long-scroll site, online booking system, AI chat assistant, 1 smart tool, Google Business Profile setup. Delivered in about 7 days.
+- Pro: from $1,299 / £1,049 / AED 4,799 / ₹54,999. Everything in Growth, unlimited pages, multiple smart tools and integrations, email and SMS lead alerts, copywriting included. About 10-14 days.
+- Optional Care plan: $49 / £39 / AED 179 / ₹1,999 per month. Hosting, updates, backups, monthly edits, priority support.
+- Domain costs roughly $10-15 per year. Payments by international transfer (Wise or PayPal), invoiced in USD, GBP, AED or INR.
 
 Process:
 1. Free demo: the client shares their business details and gets a demo of their new homepage within 48 hours, free and with no obligation.

@@ -75,7 +75,8 @@ window.CXR_BACKEND_URL = GOOGLE_SHEET_URL; // also used by the AI chat (chat.js)
     }));
 
     /* Currency switch */
-    const SYM = { USD: '$', GBP: '£', INR: '₹' };
+    // Prices always load in USD; visitors switch currency with the buttons.
+    const SYM = { USD: '$', GBP: '£', AED: 'AED ', INR: '₹' };
     $$('.cur').forEach((b) => b.addEventListener('click', () => {
         const cur = b.dataset.cur;
         $$('.cur').forEach((x) => { const on = x === b; x.classList.toggle('active', on); x.setAttribute('aria-checked', String(on)); });
@@ -84,12 +85,6 @@ window.CXR_BACKEND_URL = GOOGLE_SHEET_URL; // also used by the AI chat (chat.js)
             a.classList.remove('swap'); void a.offsetWidth; a.classList.add('swap');
         });
     }));
-    // Default to INR for visitors in India
-    try {
-        const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
-        if (tz === 'Asia/Kolkata' || tz === 'Asia/Calcutta') $('.cur[data-cur="INR"]').click();
-        else if (tz === 'Europe/London') $('.cur[data-cur="GBP"]').click();
-    } catch (_) { /* ignore */ }
 
     /* Plan buttons pre-select plan */
     $$('[data-plan]').forEach((b) => b.addEventListener('click', () => { $('#c-plan').value = b.dataset.plan; }));
