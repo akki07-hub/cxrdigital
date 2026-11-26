@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Michroma&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
     <canvas id="pixels" aria-hidden="true"></canvas>
@@ -345,9 +345,33 @@
     </footer>
 
     <!-- AI chat -->
-    <button type="button" class="ai-launcher" id="ai-launcher" aria-expanded="false" aria-controls="ai-panel">
-        <span class="ai-launcher-icon"><i class="fas fa-robot"></i></span>
-        <span class="ai-launcher-text">Ask our AI</span>
+    <button type="button" class="ai-launcher" id="ai-launcher" aria-expanded="false" aria-controls="ai-panel" aria-label="Ask our AI chatbot">
+        <span class="ai-tip" aria-hidden="true">&#128075; Ask our <strong>AI chatbot</strong></span>
+        <span class="ai-bot" aria-hidden="true">
+            <svg viewBox="0 0 64 64" width="44" height="44" focusable="false">
+                <defs>
+                    <linearGradient id="botHead" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#ffffff"/>
+                        <stop offset="1" stop-color="#c7dbff"/>
+                    </linearGradient>
+                    <radialGradient id="botGlow">
+                        <stop offset="0" stop-color="#b8f6ff"/>
+                        <stop offset="1" stop-color="#3fd8ff"/>
+                    </radialGradient>
+                </defs>
+                <line x1="32" y1="8" x2="32" y2="15" stroke="#dbe8ff" stroke-width="2.5" stroke-linecap="round"/>
+                <circle class="bot-antenna" cx="32" cy="7" r="3.6" fill="url(#botGlow)"/>
+                <rect x="7" y="27" width="6" height="13" rx="3" fill="#a9c6ff"/>
+                <rect x="51" y="27" width="6" height="13" rx="3" fill="#a9c6ff"/>
+                <rect x="12" y="15" width="40" height="34" rx="13" fill="url(#botHead)"/>
+                <rect x="17" y="21.5" width="30" height="19" rx="9.5" fill="#0b1626"/>
+                <rect class="bot-eye" x="23" y="26" width="5.5" height="7.5" rx="2.75" fill="#5ff0ff"/>
+                <rect class="bot-eye" x="35.5" y="26" width="5.5" height="7.5" rx="2.75" fill="#5ff0ff"/>
+                <path d="M27.5 36.2 q4.5 2.6 9 0" fill="none" stroke="#5ff0ff" stroke-width="1.8" stroke-linecap="round"/>
+                <rect x="25" y="50" width="14" height="5" rx="2.5" fill="#a9c6ff"/>
+            </svg>
+            <span class="ai-online"></span>
+        </span>
     </button>
     <section class="ai-panel" id="ai-panel" aria-label="CXR Digital AI assistant" hidden>
         <header class="ai-head">
@@ -373,6 +397,6 @@
     </section>
 
     <script src="app.js?v=6"></script>
-    <script src="chat.js?v=2"></script>
+    <script src="chat.js?v=3"></script>
 </body>
 </html>

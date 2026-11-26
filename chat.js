@@ -186,5 +186,19 @@
         if (b) ask(b.textContent);
     });
 
+    // Show the "Ask our AI chatbot" bubble once per visit, so touch devices
+    // (which have no hover) also discover the chat.
+    let seen = false;
+    try { seen = sessionStorage.getItem('cxr-ai-peek') === '1'; } catch (_) { /* storage blocked */ }
+    if (!seen) {
+        setTimeout(() => {
+            if (!panel.hidden) return;
+            launcher.classList.add('peek');
+            try { sessionStorage.setItem('cxr-ai-peek', '1'); } catch (_) { /* ignore */ }
+            setTimeout(() => launcher.classList.remove('peek'), 4500);
+        }, 3500);
+    }
+    launcher.addEventListener('click', () => launcher.classList.remove('peek'));
+
     window.CXRChat = { ask, toggle, history };
 })();
