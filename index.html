@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Michroma&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
     <canvas id="pixels" aria-hidden="true"></canvas>
@@ -344,6 +344,35 @@
         <p class="copy">&copy; <span id="year">2026</span> CXR Digital. All rights reserved.</p>
     </footer>
 
-    <script src="app.js?v=5"></script>
+    <!-- AI chat -->
+    <button type="button" class="ai-launcher" id="ai-launcher" aria-expanded="false" aria-controls="ai-panel">
+        <span class="ai-launcher-icon"><i class="fas fa-wand-magic-sparkles"></i></span>
+        <span class="ai-launcher-text">Ask our AI</span>
+    </button>
+    <section class="ai-panel" id="ai-panel" aria-label="CXR Digital AI assistant" hidden>
+        <header class="ai-head">
+            <span class="ai-avatar"><i class="fas fa-robot"></i></span>
+            <div>
+                <strong>CXR AI Assistant</strong>
+                <small><span class="dot"></span> Powered by Claude &middot; replies in seconds</small>
+            </div>
+            <button type="button" class="ai-close" id="ai-close" aria-label="Close chat"><i class="fas fa-xmark"></i></button>
+        </header>
+        <div class="ai-log" id="ai-log" aria-live="polite"></div>
+        <div class="ai-chips" id="ai-chips">
+            <button type="button">How much does a website cost?</button>
+            <button type="button">Can I see examples?</button>
+            <button type="button">How fast can you deliver?</button>
+            <button type="button">Do you build booking systems?</button>
+        </div>
+        <form class="ai-form" id="ai-form">
+            <textarea id="ai-input" rows="1" maxlength="800" placeholder="Ask about websites, pricing, demos..." aria-label="Your message"></textarea>
+            <button type="submit" id="ai-send" aria-label="Send"><i class="fas fa-arrow-up"></i></button>
+        </form>
+        <p class="ai-foot"><span id="ai-count"></span>AI can make mistakes. For a quote, use the free demo form.</p>
+    </section>
+
+    <script src="app.js?v=6"></script>
+    <script src="chat.js?v=2"></script>
 </body>
 </html>

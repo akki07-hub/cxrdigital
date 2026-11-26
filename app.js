@@ -6,6 +6,7 @@
  * While it's empty, the form falls back to an Instagram DM message.
  */
 const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbzF6wKUJKX3ruQCPn3RnaDQ31MEx2tH8TIDsr5CPC1IvCBkhVZLdAOGNQwZ3IqN2wpJ/exec';
+window.CXR_BACKEND_URL = GOOGLE_SHEET_URL; // also used by the AI chat (chat.js)
 
 (function () {
     'use strict';
